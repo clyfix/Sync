@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
     min-height: 100vh;
     display: grid;
@@ -58,7 +58,7 @@ button {
     padding: 0.7rem;
     margin-top: 0.35rem;
     border: 1px solid #cccccc;
-    border-radius: 6px;
+    border-radius: 3px;
     font-size: 1rem;
 }
 
@@ -84,7 +84,7 @@ button:hover {
 
 .op-btn {
     margin-top: 0;
-    background: #1f6f4f;
+    background: #25c658;
 }
 
 .op-btn:hover {
@@ -108,6 +108,7 @@ button:hover {
     color: white;
     font-weight: 700;
     transition: background-color 0.2s ease-in-out;
+    margin-top: 0.5rem;
 }
 
 .version-link:hover,
@@ -122,4 +123,48 @@ button:hover {
     color: #1f6f4f;
     font-size: 1.7rem;
     padding: 10px;
+}
+
+.error {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #d32f2f;
+    background: #ffebee;
+    padding: 10px;
+    border-radius: 6px;
+    border-left: 4px solid #d32f2f;
+}
+
+.input-group {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+
+.input-group label {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.input-group input {
+    flex: 1;
+    width: auto;
+}
+
+.ans-btn {
+    width: auto;
+    padding: 0.7rem 1rem;
+    margin-top: 0.35rem;
+    background: #b15947;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.ans-btn:hover {
+    background: #8b4237;
 }

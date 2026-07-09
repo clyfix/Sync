@@ -11,10 +11,11 @@ HOME_TEMPLATE = """
             <div class="logo-wrap">
                 <img class="logo" src="/static/Sync.png" alt="Sync logo">
             </div>
-            <h2>Home</h2>
+            <h2>Multitool & Utilities</h2>
             <p>Select an app:</p>
             <div class="version-list">
                 <a class="version-link" href="{{ url_for('calculator', version='v2') }}">Calculator</a>
+                <a class="version-link" href="{{ url_for('converter') }}">Unit Converter</a>
             </div>
         </div>
     </body>
