@@ -1,3 +1,6 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 body {
     font-family: "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
     margin: 0;
@@ -46,6 +49,7 @@ button {
     border: none;
     cursor: pointer;
     margin-top: 1rem;
+    transition: background-color 0.2s ease-in-out, transform 0.1s;
 }
 
 button:hover {
@@ -68,9 +72,35 @@ button:hover {
     background: #18553d;
 }
 
+.version-list {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.version-link,
+.back-link {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.85rem 1rem;
+    border-radius: 10px;
+    background: #1f6f4f;
+    color: white;
+    font-weight: 700;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.version-link:hover,
+.back-link:hover {
+    background: #18553d;
+}
+
 .result {
+    font-family: "Roboto mono", monospace;
     margin-top: 1rem;
     font-weight: bold;
     color: #1f6f4f;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
+    padding: 10px;
 }
