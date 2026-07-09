@@ -31,7 +31,7 @@ TEMPLATE = """
 		</style>
 	</head>
 	<body>
-		<h2>Portfolio Project: Python Calculator</h2>
+		<h2 style="color: #d9622b;">Python Calculator</h2>
 		<form method="post">
 			<label>First number:<br><input name="num1" required></label><br>
 			<label>Second number:<br><input name="num2" required></label><br>
