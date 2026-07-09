@@ -23,31 +23,28 @@ TEMPLATE = """
 	<head>
 		<meta charset="utf-8">
 		<title>Calculator UI</title>
-		<style>
-			body { font-family: Arial, sans-serif; padding: 2rem; background-color: #216643; }
-			input { padding: .5rem; margin: .25rem 0; }
-			button { padding: .5rem 1rem; }
-			.result { margin-top: 1rem; font-weight: bold; }
-		</style>
+		<link rel="stylesheet" href="/static/style.css">
 	</head>
 	<body>
-		<h2 style="color: #d9622b;">Python Calculator</h2>
-		<form method="post">
-			<label>First number:<br><input name="num1" required></label><br>
-			<label>Second number:<br><input name="num2" required></label><br>
-			<label>Operation:<br>
-				<select name="op">
-					<option value="add">Add (+)</option>
-					<option value="sub">Subtract (-)</option>
-					<option value="mul">Multiply (*)</option>
-					<option value="div">Divide (/)</option>
-				</select>
-			</label><br><br>
-			<button type="submit">Calculate</button>
-		</form>
-		{% if result is not none %}
-			<div class="result">Result: {{ result }}</div>
-		{% endif %}
+		<div class="card">
+			<h2>Python Calculator</h2>
+			<form method="post">
+				<label>First number:<br><input name="num1" required></label><br>
+				<label>Second number:<br><input name="num2" required></label><br>
+				<label>Operation:<br>
+					<select name="op">
+						<option value="add">Add (+)</option>
+						<option value="sub">Subtract (-)</option>
+						<option value="mul">Multiply (*)</option>
+						<option value="div">Divide (/)</option>
+					</select>
+				</label><br><br>
+				<button type="submit">Calculate</button>
+			</form>
+			{% if result is not none %}
+				<div class="result">Result: {{ result }}</div>
+			{% endif %}
+		</div>
 	</body>
 </html>
 """

@@ -1,0 +1,59 @@
+body {
+    font-family: "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(130deg, #1f6f4f, #000000);
+    color: #ffffff;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.861);
+    color: #223344;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: min(90vw, 380px);
+}
+
+h2 {
+    margin-top: 0;
+    color: #e2725b;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: #e2725b;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.35rem;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button {
+    background: #d9622b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: #b84d1d;
+}
+
+.result {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #1f6f4f;
+}
