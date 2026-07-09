@@ -27,8 +27,8 @@ HOME_TEMPLATE = """
     </head>
     <body>
         <div class="card">
-            <h2>Home</h2>
-            <p>Select an app to get started:</p>
+            <h2 style="font-size: 2.4rem;">Home</h2>
+            <p style="font-size: 1.4rem;">Select an app to get started:</p>
             <div class="version-list">
                 <a class="version-link" href="{{ url_for('calculator', version='v2') }}">Calculator v2</a>
             </div>
