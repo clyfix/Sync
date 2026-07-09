@@ -31,15 +31,13 @@ TEMPLATE = """
 			<form method="post">
 				<label>First number:<br><input name="num1" required></label><br>
 				<label>Second number:<br><input name="num2" required></label><br>
-				<label>Operation:<br>
-					<select name="op">
-						<option value="add">Add (+)</option>
-						<option value="sub">Subtract (-)</option>
-						<option value="mul">Multiply (*)</option>
-						<option value="div">Divide (/)</option>
-					</select>
-				</label><br><br>
-				<button type="submit">Calculate</button>
+				<label>Operation:</label>
+				<div class="operation-group">
+					<button type="submit" name="op" value="add" class="op-btn">Add +</button>
+					<button type="submit" name="op" value="sub" class="op-btn">Subtract -</button>
+					<button type="submit" name="op" value="mul" class="op-btn">Multiply ×</button>
+					<button type="submit" name="op" value="div" class="op-btn">Divide ÷</button>
+				</div><br>
 			</form>
 			{% if result is not none %}
 				<div class="result">Result: {{ result }}</div>

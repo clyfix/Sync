@@ -52,6 +52,22 @@ button:hover {
     background: #b84d1d;
 }
 
+.operation-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.op-btn {
+    margin-top: 0;
+    background: #1f6f4f;
+}
+
+.op-btn:hover {
+    background: #18553d;
+}
+
 .result {
     margin-top: 1rem;
     font-weight: bold;
