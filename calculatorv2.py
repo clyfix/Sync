@@ -16,27 +16,7 @@ def divide(x, y):
     if y == 0:
         return "Error: Cannot divide by zero!"
     return x / y
-
-HOME_TEMPLATE = """
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Home</title>
-        <link rel="stylesheet" href="/static/style.css">
-    </head>
-    <body>
-        <div class="card">
-            <h2 style="font-size: 2.4rem;">Home</h2>
-            <p style="font-size: 1.4rem;">Select an app to get started:</p>
-            <div class="version-list">
-                <a class="version-link" href="{{ url_for('calculator', version='v2') }}">Calculator v2</a>
-            </div>
-        </div>
-    </main>
-</body>
-</html>
-"""
+from home import HOME_TEMPLATE
 
 CALCULATOR_TEMPLATE = """
 <!doctype html>

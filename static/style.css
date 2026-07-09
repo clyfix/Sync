@@ -12,7 +12,7 @@ body {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.861);
+    background: rgba(255, 255, 255, 0.7);
     color: #223344;
     padding: 2rem;
     border-radius: 12px;
@@ -20,17 +20,35 @@ body {
     width: min(90vw, 380px);
 }
 
+.logo-wrap {
+    display: grid;
+    place-items: center;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    display: block;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
 h2 {
     font-size: 1.8rem;
     margin-top: 0;
-    color: #e2725b;
+    color: #b35a49;
 }
 
 label {
     display: block;
     margin-bottom: 0.75rem;
     font-weight: 600;
-    color: #e2725b;
+    color: #b15947;
 }
 
 input,
