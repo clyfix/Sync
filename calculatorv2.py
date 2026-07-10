@@ -19,7 +19,6 @@ def divide(x, y):
     return x / y
 from home import HOME_TEMPLATE
 
-# Initialize converter
 unit_converter = UnitConverter()
 
 CALCULATOR_TEMPLATE = """
@@ -185,7 +184,6 @@ def converter():
                 result = value
             else:
                 if conversion_type == 'speed':
-                    # Convert speed using the conversion formulas
                     if from_unit == 'km/h' and to_unit == 'mph':
                         result = round(value * 0.621371, 4)
                     elif from_unit == 'mph' and to_unit == 'km/h':
